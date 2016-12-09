@@ -74,25 +74,10 @@ int main(int argc, char const *argv[])
 	Elf64_Shdr *elfShdrTab = ReadElfShdr(elfFile, elfHeader);
 	if (elfShdrTab) {
 		printf("Number of Sections: %d\n", elfHeader->e_shnum);
-		for (int i = 0; i < elfHeader->e_phnum; ++i) {
+		for (int i = 0; i < elfHeader->e_shnum; ++i) {
 			printf("Sections $%d\n", i);
-			printf("\tFile Offset       0x%016llX\n", elfPhdrTab[i].p_offset);
-			printf("\tVirtual Address   0x%016llX\n", elfPhdrTab[i].p_vaddr);
-			printf("\tPhysical Address  0x%016llX\n", elfPhdrTab[i].p_paddr);
-			printf("\tFile Size         0x%016llX\n", elfPhdrTab[i].p_filesz);
-			printf("\tMemory Size       0x%016llX\n", elfPhdrTab[i].p_memsz);
-			char readbit = ' ', writebit = ' ', execbit = ' ';
-			if (elfPhdrTab[i].p_flags & 4) {
-				readbit = 'R';
-			}
-			if (elfPhdrTab[i].p_flags & 2) {
-				writebit = 'W';
-			}
-			if (elfPhdrTab[i].p_flags & 1) {
-				execbit = 'E';
-			}
-			printf("\tFlags             %c%c%c\n", readbit, writebit, execbit);
 		}
 	}
+	fclose(elfFile);
 	return 0;
 }

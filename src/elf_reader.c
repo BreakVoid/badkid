@@ -21,7 +21,7 @@ Elf64_Phdr *ReadElfPhdr(FILE *elfFile, const Elf64_Ehdr *elf64Header)
 	if (fseek(elfFile, elf64Header->e_phoff, SEEK_SET) != 0) {
 		if (ferror(elfFile)) {
 			perror("ReadElfPhdr: Error: fseek()\n");
-			fprintf(stderr,"fseek() failed in file %s at line # %d\n", __FILE__,__LINE__-5);
+			fprintf(stderr,"fseek() failed in file %s at line # %d\n", __FILE__,__LINE__ - 3);
 		}
 	}
 	fread(elf64PhdrTab, sizeof(Elf64_Phdr), phnum, elfFile);
@@ -39,10 +39,35 @@ Elf64_Shdr *ReadElfShdr(FILE *elfFile, const Elf64_Ehdr *elf64Header)
 	if (fseek(elfFile, elf64Header->e_shoff, SEEK_SET) != 0) {
 		if (ferror(elfFile)) {
 			perror("ReadElfShdr: Error: fseek()\n");
-			fprintf(stderr,"fseek() failed in file %s at line # %d\n", __FILE__,__LINE__-5);
+			fprintf(stderr,"fseek() failed in file %s at line # %d\n", __FILE__,__LINE__ - 3);
 		}
 	}
 	fread(elf64ShdrTab, sizeof(Elf64_Shdr), shnum, elfFile);
 	return elf64ShdrTab;
 }
 
+void *ReadElfProgram(FILE *elfFile, const Elf64_Phdr *elf64Phdr)
+{
+	void *content = malloc(elf64Phdr->p_filesz);
+	if (fseek(elfFile, elf64Phdr->p_offset, SEEK_SET) != 0) {
+		if (ferror(elfFile)) {
+			perror("ReadElfPhdr: Error: fseek()\n");
+			fprintf(stderr,"fseek() failed in file %s at line # %d\n", __FILE__, __LINE__ - 3);
+		}
+	}
+	fread(content, elf64Phdr->p_filesz, 1, elfFile);
+	return content;
+}
+
+void *ReadElfSection(FILE *elfFile, const Elf64_Shdr *elf64Shdr)
+{
+	void *content = malloc(elf64Shdr->sh_size);
+	if (fseek(elfFile, elf64Shdr->sh_offset, SEEK_SET) != 0) {
+		if (ferror(elfFile)) {
+			perror("ReadElfPhdr: Error: fseek()\n");
+			fprintf(stderr,"fseek() failed in file %s at line # %d\n", __FILE__, __LINE__ - 3);
+		}
+	}
+	fread(content, elf64Shdr->sh_size, 1, elfFile);
+	return content;
+}
