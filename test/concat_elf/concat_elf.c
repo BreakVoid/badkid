@@ -25,11 +25,11 @@ int main(int argc, char const *argv[])
 	void **nonpieContent = malloc(sizeof(void *) * nonPieHeader.e_phnum);
 	for (int i = 0; i < pieHeader.e_phnum; ++i) {
 		pieContent[i] = malloc(piePhdrTab[i].p_filesz);
-		ReadElfProgram(pieFile, &piePhdrTab[i],	pieContent);
+		ReadElfProgram(pieFile, &piePhdrTab[i],	pieContent[i]);
 	}
 	for (int i = 0; i < nonPieHeader.e_phnum; ++i) {
 		nonpieContent[i] = malloc(nonPiePhdrTab[i].p_filesz);
-		ReadElfProgram(nonPieFile, &nonPiePhdrTab[i], nonpieContent);
+		ReadElfProgram(nonPieFile, &nonPiePhdrTab[i], nonpieContent[i]);
 	}
 
 	FILE *dstFile = fopen(dstFilename, "wb");
@@ -54,8 +54,6 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < dstHeader.e_phnum; ++i) {
 		dstPhdrTab[i].p_offset = curOff;
 		curOff += dstPhdrTab[i].p_filesz;
-		printf("Current Program %d\n", i);
-		printf("file size: %llu\n", dstPhdrTab[i].p_filesz);
 		WriteElfProgram(dstFile, &dstPhdrTab[i], dstContent[i]);
 	}
 
