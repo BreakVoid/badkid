@@ -3,7 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
-	FILE *elfFile = fopen("CF-267B.elf", "rb");
+	FILE *elfFile = fopen("pie.elf", "rb");
 	if (!elfFile) {
 		printf("Open File Failed.\n");
 		return 0;
@@ -50,6 +50,8 @@ int main(int argc, char const *argv[])
 	Elf64_Phdr *elfPhdrTab = (Elf64_Phdr *) malloc(sizeof(Elf64_Phdr) * elfHeader.e_phnum);
 	ReadElfPhdrTab(elfFile, &elfHeader, elfPhdrTab);
 
+	std::cout << sizeof(Elf64_Off) << std::endl;
+
 	if (elfPhdrTab) {
 		printf("Number of Programs: %d\n", elfHeader.e_phnum);
 		for (int i = 0; i < elfHeader.e_phnum; ++i) {
@@ -81,6 +83,9 @@ int main(int argc, char const *argv[])
 			printf("Sections $%d\n", i);
 		}
 	}
+
+	free(elfPhdrTab);
+	free(elfShdrTab);
 	fclose(elfFile);
 	return 0;
 }

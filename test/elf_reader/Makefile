@@ -11,3 +11,6 @@ test_elf_reader: ../../src/elf_reader.h ../../src/elf_reader.c test_elf_reader.c
 
 clean:
 	-rm test_elf_reader test_elf_reader.o elf_reader.o pie.elf
+
+run: all
+	./test_elf_reader
