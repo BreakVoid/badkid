@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
 
 	void **dstContent = malloc(sizeof(void *) * (pieHeader.e_phnum + nonPieHeader.e_phnum));
 	memcpy(dstContent, pieContent, sizeof(void *) * pieHeader.e_phnum);
-	memcpy(&dstContent[pieHeader.e_phnum], nonPiePhdrTab, sizeof(void *) * nonPieHeader.e_phnum);
+	memcpy(&dstContent[pieHeader.e_phnum], nonpieContent, sizeof(void *) * nonPieHeader.e_phnum);
 
 	unsigned long long curOff = 0x40;
 
