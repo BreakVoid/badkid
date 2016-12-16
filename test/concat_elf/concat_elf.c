@@ -54,6 +54,14 @@ int main(int argc, char const *argv[])
 	for (int i = 0; i < dstHeader.e_phnum; ++i) {
 		dstPhdrTab[i].p_offset = curOff;
 		curOff += dstPhdrTab[i].p_filesz;
+		if (i >= pieHeader.e_phnum) {
+			if (dstPhdrTab[i].p_type) {
+				dstPhdrTab[i].p_type = PT_NULL;
+				dstPhdrTab[i].p_vaddr = dstPhdrTab[i].p_paddr = 0;
+				dstPhdrTab[i].p_memsz = 0;
+				continue;
+			}
+		}
 		WriteElfProgram(dstFile, &dstPhdrTab[i], dstContent[i]);
 	}
 
