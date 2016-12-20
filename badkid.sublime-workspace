@@ -1,0 +1,1450 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"STDIO",
+				"STDOUT_FILENO\tMacro"
+			],
+			[
+				"buff",
+				"bufferWrite\tchar [4096]"
+			],
+			[
+				"wait",
+				"waitpid(pid_t, int *, int)\tpid_t"
+			],
+			[
+				"exec",
+				"execvp(const char *__file, char *const *__argv)\tint"
+			],
+			[
+				"dst",
+				"dstPhdrTab\tElf64_Phdr *"
+			],
+			[
+				"p",
+				"e_phnum\tElf64_Half"
+			],
+			[
+				"pieh",
+				"pieHeader\tElf64_Ehdr"
+			],
+			[
+				"PT_GNU",
+				"PT_GNU_EH_FRAME\tMacro"
+			],
+			[
+				"PT_",
+				"PT_TLS\tMacro"
+			],
+			[
+				"nonpie",
+				"nonpieContent\tvoid **"
+			],
+			[
+				"fg",
+				"fgetpos(FILE *restrict, fpos_t *)\tint"
+			],
+			[
+				"elf",
+				"elf64Phdr\tconst Elf64_Phdr *"
+			],
+			[
+				"nonPie",
+				"nonPieHeader\tElf64_Ehdr"
+			],
+			[
+				"Writeelf",
+				"WriteElfPhdrTab(FILE *elfFile, const Elf64_Ehdr *elf64Header, Elf64_Phdr *elf64PhdrTab)\tint"
+			],
+			[
+				"e_p",
+				"e_phnum\tElf64_Half"
+			],
+			[
+				"dstf",
+				"dstFile"
+			],
+			[
+				"ds",
+				"dstHeader\tElf64_Ehdr"
+			],
+			[
+				"SEEK_",
+				"SEEK_SET\tMacro"
+			],
+			[
+				"e_ph",
+				"e_phnum\tElf64_Half"
+			],
+			[
+				"non",
+				"nonPiePhdrTab\tElf64_Phdr *"
+			],
+			[
+				"nonpieh",
+				"nonPiePhdrTab\tElf64_Phdr *"
+			],
+			[
+				"pie",
+				"piePhdrTab\tElf64_Phdr *"
+			],
+			[
+				"Readelf",
+				"ReadElfPhdrTab(FILE *elfFile, const Elf64_Ehdr *elf64Header, Elf64_Phdr *elf64PhdrTab)\tint"
+			],
+			[
+				"piefil",
+				"pieFile"
+			],
+			[
+				"e_sh",
+				"e_shoff\tElf64_Off"
+			],
+			[
+				"sh",
+				"sh_size"
+			],
+			[
+				"C",
+				"CFLAGS"
+			],
+			[
+				"Write",
+				"WriteElfProgram(FILE *elfFile, const Elf64_Phdr *elf64Phdr, void *content)\tvoid"
+			],
+			[
+				"p_a",
+				"p_vaddr\tElf64_Addr"
+			],
+			[
+				"Read",
+				"ReadElfProgram(FILE *elfFile, const Elf64_Phdr *elf64Phdr, void *buffer)\tvoid"
+			],
+			[
+				"elfph",
+				"Elf64_Phdr"
+			],
+			[
+				"i",
+				"ifndef macro\tKeyWord"
+			],
+			[
+				"arg",
+				"argc\tint"
+			],
+			[
+				"p_",
+				"p_filesz\tElf64_Xword"
+			],
+			[
+				"Elf",
+				"Elf64_Shdr\tTypedef"
+			],
+			[
+				"ferr",
+				"ferror(FILE *)\tint"
+			],
+			[
+				"fpr",
+				"fputs(const char *restrict, FILE *restrict)\tint"
+			],
+			[
+				"eph",
+				"e_phnum\tElf64_Half"
+			],
+			[
+				"ReadElf",
+				"ReadElfPhdr(FILE *elfFile, const Elf64_Ehdr *elf64Header)\tElf64_Phdr *"
+			],
+			[
+				"data",
+				"datatime"
+			],
+			[
+				"lo",
+				"logout"
+			],
+			[
+				"input",
+				"inputShape"
+			],
+			[
+				"conv_s",
+				"conv_sbn_relu_cache"
+			],
+			[
+				"beta",
+				"betai1"
+			],
+			[
+				"gamma2",
+				"gammai2"
+			],
+			[
+				"conv",
+				"conv_sbn_relu_cache2"
+			],
+			[
+				"gam",
+				"gammai1"
+			],
+			[
+				"num",
+				"num_conv_layers"
+			],
+			[
+				"bn",
+				"bn_cache"
+			],
+			[
+				"bat",
+				"batchnorm_forward"
+			],
+			[
+				"gamm",
+				"gammai"
+			],
+			[
+				"con",
+				"conv_param"
+			],
+			[
+				"conv_para",
+				"conv_params"
+			],
+			[
+				"file",
+				"filter_size"
+			],
+			[
+				"weig",
+				"weight_scale"
+			],
+			[
+				"inptu",
+				"inputShape"
+			],
+			[
+				"max",
+				"maxpool_cache"
+			],
+			[
+				"aff",
+				"aff_relu_cache"
+			],
+			[
+				"aff2",
+				"aff2_cache"
+			],
+			[
+				"sft",
+				"sftm_loss"
+			],
+			[
+				"affin",
+				"affine_forward"
+			],
+			[
+				"hide",
+				"hidden_dim"
+			],
+			[
+				"hidd",
+				"hidden_dim"
+			],
+			[
+				"filt",
+				"filter_size"
+			],
+			[
+				"fil",
+				"filter_size"
+			],
+			[
+				"wei",
+				"weight_scale"
+			],
+			[
+				"pool",
+				"pool_param"
+			],
+			[
+				"zer",
+				"zeros"
+			],
+			[
+				"use",
+				"use_dropout"
+			],
+			[
+				"softma",
+				"softmaxLoss"
+			],
+			[
+				"soft",
+				"softmax_loss"
+			],
+			[
+				"hidde",
+				"hidden_dims"
+			],
+			[
+				"para",
+				"params"
+			],
+			[
+				"zero",
+				"zeros_like"
+			],
+			[
+				"STD",
+				"STDOUT_FILENO\tMacro"
+			],
+			[
+				"TEEC_MEMREF",
+				"TEEC_MEMREF_TEMP_INPUT\tMacro"
+			],
+			[
+				"TEEC_ME",
+				"TEEC_MEMREF_TEMP_INPUT\tMacro"
+			],
+			[
+				"TEEC_VAL",
+				"TEEC_VALUE_INOUT\tMacro"
+			],
+			[
+				"lib",
+				"libcutils"
+			],
+			[
+				"TEEC_M",
+				"TEEC_MEMREF_PARTIAL_INOUT\tMacro"
+			],
+			[
+				"TEEC",
+				"TEEC_SUCCESS\tMacro"
+			],
+			[
+				"HEll",
+				"HELLOWORLD"
+			],
+			[
+				"ra",
+				"random()\tlong"
+			],
+			[
+				"PRO",
+				"PROT_EXEC\tMacro"
+			],
+			[
+				"func",
+				"funcInstruction\tchar *"
+			],
+			[
+				"mdtfil",
+				"mdtFilename\tconst std::string"
+			],
+			[
+				"part",
+				"partFilename\tstd::string"
+			],
+			[
+				"par",
+				"partFile\tint"
+			],
+			[
+				"partfil",
+				"partFilename\tstd::string"
+			],
+			[
+				"p_fl",
+				"p_filesz\tElf32_Word"
+			],
+			[
+				"ph",
+				"e_phnum\tElf32_Half"
+			],
+			[
+				"e_",
+				"e_phoff\tElf32_Off"
+			],
+			[
+				"e_s",
+				"e_shentsize\tElf32_Half"
+			],
+			[
+				"bes",
+				"best_acc\tdouble"
+			],
+			[
+				"be",
+				"best_reg\tdouble"
+			],
+			[
+				"best",
+				"best_reg\tdouble"
+			],
+			[
+				"thre",
+				"threads"
+			],
+			[
+				"log",
+				"logFile"
+			],
+			[
+				"exp",
+				"exp_scores"
+			],
+			[
+				"ex",
+				"exp_scores"
+			],
+			[
+				"For",
+				"formart"
+			],
+			[
+				"s",
+				"shape"
+			],
+			[
+				"cor",
+				"correct_class_score_list"
+			],
+			[
+				"exi",
+				"exitStatus\tint"
+			],
+			[
+				"of",
+				"oflow_sub_ba"
+			],
+			[
+				"_da",
+				"_data_hi"
+			],
+			[
+				"wr",
+				"wrdata_hi"
+			],
+			[
+				"wri",
+				"write_hi"
+			],
+			[
+				"da",
+				"data_lo"
+			],
+			[
+				"wrd",
+				"wrdata_lo"
+			],
+			[
+				"wre",
+				"wrreg_hi_lo"
+			],
+			[
+				"reg",
+				"regwrite"
+			],
+			[
+				"wb_wdata_lo",
+				"wb_wdata_lo_i"
+			],
+			[
+				"mem",
+				"mem_wdata_hi"
+			],
+			[
+				"mem_wd",
+				"mem_wdata"
+			],
+			[
+				"memd",
+				"mem_wdata_lo"
+			],
+			[
+				"wbd",
+				"wb_wdata_lo"
+			],
+			[
+				"wb",
+				"wb_wdata_hi"
+			],
+			[
+				"wb_d",
+				"wb_wdata_lo"
+			],
+			[
+				"wb_da",
+				"wb_wdata_hi"
+			],
+			[
+				"wd",
+				"wdata_hi_o"
+			],
+			[
+				"hi_",
+				"hi_reg_data_i"
+			],
+			[
+				"ex_wre",
+				"ex_wreg_lo_o"
+			],
+			[
+				"ex_wreg_hi",
+				"ex_wreg_hi_o"
+			],
+			[
+				"Wri",
+				"WriteDisable"
+			],
+			[
+				"wreg",
+				"wreg_o"
+			],
+			[
+				"reg1",
+				"reg1_read_o"
+			],
+			[
+				"aluse",
+				"alusel_o"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "include/elfio/elfio.hpp",
+			"settings":
+			{
+				"buffer_size": 30107,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "include/elfio/main.cc",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main.cc",
+			"settings":
+			{
+				"buffer_size": 65,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++11/C++11.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/Custom C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Custom C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++11/C++11.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "new",
+		"selected_items":
+		[
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"rein",
+				"Verilog: Reindent"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"conv spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"conv tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indent ",
+				"Indentation: Convert to all views to Spaces"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"openfile",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"sync",
+				"Set Syntax: C"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"syntax mark",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"color",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"the",
+				"Themr: List themes"
+			],
+			[
+				"texvie",
+				"Hex Viewer: Toggle Hex View"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"open ",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"line",
+				"Line Ending: Unix"
+			],
+			[
+				"install ",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pre",
+				"Preferences: Settings"
+			],
+			[
+				"pref",
+				"Preferences: Settings"
+			],
+			[
+				"open r",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"reso",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"system",
+				"Set Syntax: SystemVerilog"
+			],
+			[
+				"set x8",
+				"Set Syntax: x86 and x86_64 Assembly"
+			],
+			[
+				"x",
+				"Set Syntax: x86 and x86_64 Assembly"
+			],
+			[
+				"hex",
+				"Hex Viewer: Show Hex Inspector"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"arm",
+				"Set Syntax: ARM Assembly"
+			],
+			[
+				"mip",
+				"Set Syntax: MIPS"
+			],
+			[
+				"set arm",
+				"Set Syntax: ARM Assembly"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sn",
+				"Snippet: Read File Into Vector"
+			],
+			[
+				"sni",
+				"Snippet: struct"
+			],
+			[
+				"set mip",
+				"Set Syntax: MIPS"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"re",
+				"PackageResourceViewer: Open Resource"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"0x19223c - 0x1922a0",
+			"0x2088c4 - 0x208598",
+			"0x390",
+			"- 0x1912A0 + 0x208598",
+			"- 0x19223c + 0x2088c4",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Songyu/Projects/badkid",
+		"/Users/Songyu/Projects/badkid/experiments/fork-exec",
+		"/Users/Songyu/Projects/badkid/include",
+		"/Users/Songyu/Projects/badkid/include/elfio",
+		"/Users/Songyu/Projects/badkid/src"
+	],
+	"file_history":
+	[
+		"/Users/Songyu/Lab/smartisan/system/recovery-from-boot.p",
+		"/Users/Songyu/Projects/badkid/experiments/fork-exec/np1.cc",
+		"/Users/Songyu/Projects/badkid/experiments/fork-exec/fork-exec.cc",
+		"/Users/Songyu/Downloads/elfio-3.2/elfio/elfio_dynamic.hpp",
+		"/Users/Songyu/Downloads/elfio-3.2/elfio/elfio.hpp",
+		"/Users/Songyu/Downloads/elfio-3.2/elfio/elfio_segment.hpp",
+		"/Users/Songyu/Downloads/elfio-3.2/examples/writer/writer.cpp",
+		"/Users/Songyu/Downloads/elfio-3.2/examples/tutorial/tutorial.cpp",
+		"/Users/Songyu/Downloads/elfio-3.2/examples/elfdump/elfdump.cpp",
+		"/Users/Songyu/Lab/smartisan/firmware-update/NON-HLOS.d/trustlet.py",
+		"/Users/Songyu/Downloads/elfio-3.2/examples/write_obj/write_obj.cpp",
+		"/Users/Songyu/Lab/smartisan/META-INF/com/google/android/updater-script",
+		"/Users/Songyu/Lab/smartisan/META-INF/com/google/android/update-binary",
+		"/Users/Songyu/Projects/badkid/test/concat_elf/concat_elf.c",
+		"/Users/Songyu/Projects/badkid/test/user_space_elf_loader/simple_elf.c",
+		"/Users/Songyu/Projects/badkid/test/simplest_pie/simplest_pie.c",
+		"/Users/Songyu/Projects/badkid/test/user_space_elf_loader/loader.c",
+		"/Users/Songyu/Projects/badkid/src/elf_writer.c",
+		"/Users/Songyu/Projects/badkid/test/simplest_pie/Makefile",
+		"/Users/Songyu/Projects/badkid/test/simplest_pie/link-script",
+		"/Users/Songyu/Projects/badkid/test/concat_elf/elf_writer.c",
+		"/Users/Songyu/Projects/badkid/test/shift_pie_elf/shift_pie_elf.c",
+		"/Users/Songyu/Projects/badkid/test/concat_elf/elf_writer.h",
+		"/Users/Songyu/Projects/badkid/test/concat_elf/elf_reader.h",
+		"/Users/Songyu/Lab/CallHuaweiTA/jni/tee_client_api.h",
+		"/Users/Songyu/Lab/CallHuaweiTA/fake_ali.c",
+		"/Users/Songyu/Lab/CallHuaweiTA/jni/call-huawei-ta.c",
+		"/Users/Songyu/Projects/badkid/test/concat_elf/Makefile",
+		"/Users/Songyu/Projects/badkid/test/shift_pie_elf/Makefile",
+		"/Users/Songyu/Projects/badkid/src/Makefile",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/README.md",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/collectSubmission.sh",
+		"/Users/Songyu/Projects/badkid/test/shift_pie_elf/shift_pie_elf",
+		"/Users/Songyu/Projects/badkid/src/elf_reader.c",
+		"/Users/Songyu/Projects/badkid/test/elf_reader/test_elf_reader.cc",
+		"/Users/Songyu/Projects/badkid/test/elf_reader/Makefile",
+		"/Users/Songyu/Projects/badkid/src/elf_utility.h",
+		"/Users/Songyu/Projects/badkid/src/elf_writer.h",
+		"/Users/Songyu/Projects/badkid/src/elf_reader.h",
+		"/Users/Songyu/Projects/badkid/test/shift_pie_elf/shifted_pie.elf",
+		"/Users/Songyu/Projects/badkid/test/shift_pie_elf/simplest_pie/Makefile",
+		"/Users/Songyu/Projects/badkid/test/shift_pie_elf/simplest_pie/simplest_pie.cc",
+		"/Users/Songyu/Projects/badkid/.gitignore",
+		"/Users/Songyu/Projects/badkid/test/shift_pie_elf/simplest_pie/Makefile\nMakefile",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/result/result/ConvolutionalNetworks.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/result/result/ConvolutionalNet4.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/result/result/Solver.output",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/ConvolutionalNetworks.ipynb",
+		"/Users/Songyu/Playground/try-env.c",
+		"/Users/Songyu/Projects/badkid/include/elf.h",
+		"/Users/Songyu/Projects/badkid/test/elf_reader/.gitignore",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/cwctype",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/new",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/ConvolutionalNetworks.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/solver.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/Solver.output",
+		"/Users/Songyu/CNN.output",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/layers.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/fast_layers.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/classifiers/cnn.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/setup.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/im2col_cython.pyc",
+		"/Users/Songyu/Playground/myscript",
+		"/Users/Songyu/Playground/calc.cc",
+		"/Users/Songyu/Playground/multi-start.c",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/optim.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/classifiers/fc_net.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/layer_utils.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment2/cs231n/data_utils.py",
+		"/Users/Songyu/OneDrive/OnePasswordSecretKey",
+		"/usr/lib/libc++.1.dylib",
+		"/Users/Songyu/Playground/try-self-modifying-code.c",
+		"/Users/Songyu/Playground/simplest.s",
+		"/Users/Songyu/Playground/stdio_manually.c",
+		"/Users/Songyu/Playground/start.c",
+		"/Users/Songyu/Lab/CallHuaweiTA/jni/Android.mk",
+		"/Users/Songyu/Lab/CallHuaweiTA/obj/local/arm64-v8a/objs/callta/call-huawei-ta.o.d",
+		"/Users/Songyu/Lab/CallHuaweiTA/jni/log",
+		"/Users/Songyu/OneDrive/jni/Android.mk",
+		"/Users/Songyu/Lab/CallHuaweiTA/Android.mk",
+		"/Users/Songyu/Lab/CallHuaweiTA/call-huawei-ta.c",
+		"/Users/Songyu/Projects/elf-loader/loader.c",
+		"/Users/Songyu/Playground/中文测试",
+		"/Users/Songyu/Lab/P9-161/HwSecureIME/META-INF/CERT.SF",
+		"/Users/Songyu/Lab/P9-161/HwSecureIME/META-INF/CERT.RSA",
+		"/Users/Songyu/Lab/optee-hello_world/host/main.c",
+		"/Users/Songyu/Lab/CallHuaweiTA/tee_client_api.h",
+		"/Users/Songyu/Lab/optee-include/tee_client_api.h",
+		"/Users/Songyu/Downloads/libteec.idc",
+		"/Users/Songyu/Lab/socket.h",
+		"/Users/Songyu/Lab/sys/_types/_iovec_t.h",
+		"/Users/Songyu/Playground/Code/Makefile",
+		"/Users/Songyu/Playground/Code/CF-253E.cc",
+		"/Users/Songyu/Projects/sit/src/Makefile",
+		"/Users/Songyu/Playground/try-pic-data.cc",
+		"/Users/Songyu/Playground/many-arguments.c",
+		"/Users/Songyu/Playground/filelist-xiaomi_5_rom",
+		"/Users/Songyu/Playground/random-dev.c",
+		"/Users/Songyu/Downloads/jni/util.c",
+		"/Users/Songyu/Playground/helloworld-android.cc",
+		"/Users/Songyu/Downloads/jni/Android.mk",
+		"/Users/Songyu/Lab/P9-161/TEEOS_with_internal_ta/recover_func_name.py",
+		"/Users/Songyu/Documents/Virtual Machines.localized/Windows 10 x64.vmwarevm/Windows 10 x64.vmx",
+		"/Users/Songyu/Lab/P9-161/TEEOS_with_internal_ta/dump_kernel.py",
+		"/Users/Songyu/.aria2/aria2-rpc.conf",
+		"/Users/Songyu/Lab/P9-161/TEEOS_with_internal_ta/unpack.py",
+		"/Users/Songyu/Lab/P9-161/TEEOS_with_internal_ta/README",
+		"/Users/Songyu/.ssh/config",
+		"/Users/Songyu/Lab/MIUI_MI5SP_6.10.13/NON_HLOS_image/image/mdt2elf.cc",
+		"/Users/Songyu/Playground/fork.cc",
+		"/Users/Songyu/Lab/elf.h",
+		"/Users/Songyu/Playground/encrypt_code.cc",
+		"/Users/Songyu/Playground/try-self-modifying-code.cc",
+		"/Users/Songyu/Playground/i_am_a_virus.cc",
+		"/Users/Songyu/OneDrive/Synalze Grammar/ELF.grammar",
+		"/Users/Songyu/Playground/try-self-modifying-code",
+		"/Users/Songyu/Lab/P9-161/output/unpack.py",
+		"/Users/Songyu/Lab/P9-161/output/VERLIST.img",
+		"/Users/Songyu/Lab/P9-161/split_data.pl",
+		"/Users/Songyu/citra/build/cmake_install.cmake",
+		"/Users/Songyu/Library/Application Support/Sublime Text 3/Packages/Clang-Complete/cc.sublime-settings",
+		"/Users/Songyu/Playground/gcd.cc",
+		"/Users/Songyu/Lab/MIUI_MI5SP_6.10.13/NON_HLOS_image/image/elf.h",
+		"/Users/Songyu/Lab/MIUI_MI5SP_6.10.13/NON_HLOS_image/image/readmdt.cc",
+		"/Users/Songyu/Lab/MIUI_MI5SP_6.10.13/NON_HLOS_image/image/mdt2elf.cpp",
+		"/Users/Songyu/Lab/MIUI_MI5SP_6.10.13/NON_HLOS_image/image/readmdt.py",
+		"/Users/Songyu/DeepLearning/DLCourse_AS/dl_assignment1/collectSubmission.sh",
+		"/Users/Songyu/.ssh/known_hosts"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"buffer",
+			"msm",
+			"sb",
+			"sbl",
+			"TEEC_Context",
+			"buffer",
+			"void",
+			"Success",
+			"buffer",
+			"Elf64_Phdr",
+			"fWrite",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"read",
+			"Read",
+			"ELF_READER_H_",
+			"elf64_shdr",
+			"elf64Shdr",
+			"elf64Phdr",
+			"print",
+			"layer",
+			"input",
+			"conv_forward",
+			"conv_params",
+			"i4",
+			"i3",
+			"Wo",
+			"Ho",
+			"i2",
+			"i1",
+			"W_prime",
+			"H_prime",
+			"i4",
+			"i3",
+			"i2",
+			"i1",
+			"Ho",
+			"i1",
+			"yi",
+			"libc",
+			"iovec",
+			"teec_param",
+			"TEEC_PARa",
+			"TEE_PARM",
+			"\"\n",
+			"filename",
+			"header",
+			"scores",
+			"variable",
+			"scores",
+			"ReadNumberLE",
+			"e_indent",
+			"Elf64_Half",
+			"Elf32_Off",
+			"Elf32_Word",
+			"Elf32_Half",
+			"1",
+			"IDAPython_ExecScript",
+			"IDAExec",
+			"%1",
+			"%`",
+			"tee",
+			"libTEE",
+			"    ",
+			"control",
+			"hi",
+			"id_wreg_hi_o",
+			"hi_reg",
+			"hi_regs",
+			"DEBUG",
+			"bitset",
+			"#",
+			"CCHK",
+			"DESTDIR",
+			"BIN_DIR",
+			"_func_main",
+			"(PPTP)"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "include/elfio/elfio.hpp",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 30107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1420,
+								1420
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C++11/C++11.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1085.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "include/elfio/main.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 65,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"open_with_edit": true,
+							"syntax": "Packages/C++11/C++11.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.cc":
+	{
+		"height": 100.0
+	},
+	"output.exec":
+	{
+		"height": 159.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "badkid.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/MyCpuMips/report/reference.bib"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
