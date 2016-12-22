@@ -3,7 +3,11 @@
 
 int main(int argc, char const *argv[])
 {
-	FILE *elfFile = fopen("pie.elf", "rb");
+	if (argc < 2) {
+		perror("usage: test_elf_reader <FILE>\n");
+		return -1;
+	}
+	FILE *elfFile = fopen(argv[1], "rb");
 	if (!elfFile) {
 		printf("Open File Failed.\n");
 		return 0;
