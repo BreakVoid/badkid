@@ -12,3 +12,5 @@ clean:
 	-rm so2str
 	-rm virus
 	-rm data.cc
+	-rm virus.infected
+	-rm so2str.infected

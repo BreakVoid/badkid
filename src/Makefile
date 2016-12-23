@@ -4,4 +4,5 @@ all:
 
 clean:
 	$(MAKE) -C virus-main clean
+	$(MAKE) -C lighter clean
 	-rm virus
