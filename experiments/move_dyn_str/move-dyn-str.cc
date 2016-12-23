@@ -84,8 +84,7 @@ int main(int argc, char *argv[])
     newSection->set_link( pdynstr->get_link() );
 
     string_section_accessor dynstr_acc(newSection);
-
-    static char newLibName[] = "libdl.so.2";
+    static char newLibName[] = "libhellopie.so";
     size_t newStringOff = dynstr_acc.add_string(newLibName);
 
     elfFile.segments[2]->add_section_index( newSection->get_index(), newSection->get_addr_align() );
