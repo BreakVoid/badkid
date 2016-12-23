@@ -1,7 +1,7 @@
 all:
-	$(MAKE) -C virus_main all
+	$(MAKE) -C virus-main all
 	cp ./virus_main/virus ./virus
 
 clean:
-	$(MAKE) -C virus_main clean
+	$(MAKE) -C virus-main clean
 	-rm virus

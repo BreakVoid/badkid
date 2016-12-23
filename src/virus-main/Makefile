@@ -8,7 +8,7 @@ data.cc: so2str.cc
 	./so2str
 
 clean:
-	$(MAKE) -C ../libvirus all
+	$(MAKE) -C ../libvirus clean
 	-rm so2str
 	-rm virus
 	-rm data.cc
