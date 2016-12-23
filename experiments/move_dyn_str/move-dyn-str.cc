@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    section *newSection = elfFile.sections.add(".dynstr");
+    section *newSection = elfFile.sections.add(".new-dynstr");
     newSection->set_type( pdynstr->get_type() );
     newSection->set_flags( pdynstr->get_flags() );
     newSection->set_addr_align( pdynstr->get_addr_align() );
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 
     string_section_accessor dynstr_acc(newSection);
 
-    static char newLibName[] = "Hello World";
+    static char newLibName[] = "libdl.so.2";
     size_t newStringOff = dynstr_acc.add_string(newLibName);
 
     elfFile.segments[2]->add_section_index( newSection->get_index(), newSection->get_addr_align() );
@@ -95,7 +95,39 @@ int main(int argc, char *argv[])
     Elf64_Addr newDynStrAddr = newSection->get_address();
     std::cout << "new .dynstr address is " << std::hex << newDynStrAddr << std::endl << std::dec;
 
-    for 
+    section *dyn_sec = NULL;
+    for (int i = 0; i < sec_num; ++i) {
+        section *sec = elfFile.sections[i];
+        if (sec->get_name() == ".dynamic") {
+            dyn_sec = sec;
+            break;
+        }
+    }
+    
+    Elf64_Dyn *dyn_data = (Elf64_Dyn *)malloc(dyn_sec->get_size());
+
+    memcpy(dyn_data, dyn_sec->get_data(), dyn_sec->get_size());
+
+    int entNum = dyn_sec->get_size() / sizeof(Elf64_Dyn);
+    for (int i = 0; i < entNum; ++i) {
+        if (dyn_data[i].d_tag == DT_STRTAB) {
+            dyn_data[i].d_un.d_ptr = newDynStrAddr;
+            break;
+        }
+    }
+
+    for (int i = 0; i < entNum; ++i) {
+        if (dyn_data[i].d_tag == DT_NULL) {
+            dyn_data[i].d_tag = DT_NEEDED;
+            dyn_data[i].d_un.d_val = newStringOff;
+            break;
+        }
+    }
+
+    dyn_sec->set_link(newSection->get_index());
+    dyn_sec->set_data((char *)dyn_data, dyn_sec->get_size());
+
+    elfFile.save(std::string(argv[1]) + ".modified");
 
     return 0;
 }
