@@ -5,3 +5,4 @@ libvirus.so: virus.cc
 
 clean:
 	-rm libvirus.so
+	-rm libvirus.so.infected
