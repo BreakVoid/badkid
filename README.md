@@ -6,6 +6,7 @@ A virus infected ELF file.
 - Infected ELF would need the shared object
 - The main behaviour is written in the initialization of the shared object.
 - The infected ELF would have a suffix `.infected`
+
 ## Assumption
 ### Root Privilege
 The executable file is run with root privilege.
